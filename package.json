@@ -1,0 +1,56 @@
+{
+  "name": "@webship/workspace-products",
+  "version": "1.0.0",
+  "description": "The Products workspace for Webship Workspace: the `products/` folder (type sites), its settings file, its 9 commands and its docs, activated as a plugin.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "private": true,
+  "license": "ISC",
+  "repository": "github:webship/workspace-products",
+  "files": [
+    "dist/src",
+    "commands",
+    "config",
+    "docs",
+    "features",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "products",
+    "label": "Products",
+    "workspace": {
+      "key": "products",
+      "settingsTemplate": "config/workspace.products.settings.yml",
+      "files": [
+        "commands/cmd-tool-backup-product.sh",
+        "commands/cmd-tools-checks.sh",
+        "commands/cmd-tools-clone.sh",
+        "commands/cmd-tools-gitlab-ci-local.sh",
+        "commands/cmd-tools-graphify.sh",
+        "commands/cmd-tools-obsidian.sh",
+        "commands/cmd-tools-ragify.sh",
+        "commands/cmd-tools-reclaim.sh",
+        "commands/cmd-tools-screen.sh"
+      ],
+      "docs": [
+        "docs/AGENTS.md",
+        "docs/CLAUDE.md",
+        "docs/README.md"
+      ]
+    },
+    "features": [
+      "features/products.feature"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship/workspace-plugin-api": "github:webship/workspace-plugin-api#1.0.x",
+    "typescript": "^5.9.0"
+  }
+}
