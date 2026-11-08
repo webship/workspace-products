@@ -1,4 +1,4 @@
-# @webship/workspace-products
+# @webship.co/workspace-products
 
 The **Products** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `products/` folder (type `sites`), its settings file (`core/config/workspace.products.settings.yml`),
