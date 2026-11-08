@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-products",
   "version": "1.0.0-alpha1",
-  "description": "The Products workspace for Webship Workspace: the `products/` folder (type sites), its settings file, its 0 commands and its docs, activated as a plugin.",
+  "description": "The Products workspace for Webship Workspace: the `products/` folder (type sites), its settings file, its 6 commands and its docs, activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -29,7 +29,14 @@
     "workspace": {
       "key": "products",
       "settingsTemplate": "config/workspace.products.settings.yml",
-      "files": [],
+      "files": [
+        "commands/cmd-tool-backup-product.sh",
+        "commands/cmd-tools-checks.sh",
+        "commands/cmd-tools-clone.sh",
+        "commands/cmd-tools-gitlab-ci-local.sh",
+        "commands/cmd-tools-reclaim.sh",
+        "commands/cmd-tools-screen.sh"
+      ],
       "docs": [
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
