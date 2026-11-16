@@ -1,6 +1,6 @@
 ---
 name: products-maintainer
-description: Use this agent to work on a product in the `products/` folder of the Webship Workspace — a distribution, profile or package kept as a real git checkout — and bring it to green before a push: its code-quality checks with `cmd-tools-checks.sh`, its GitLab CI pipeline on this machine with `cmd-tools-gitlab-ci-local.sh`, a branch as a git worktree with `cmd-tools-clone.sh`, a backup with `cmd-tool-backup-product.sh`. It works in containers only and never on the host. Invoke for "run the checks of this product", "run the pipeline locally before I push", "why is this job red", "make a worktree for this branch", or "back up this product".
+description: Use this agent to work on a product in the `products/` folder of the Webship Workspace — a distribution, profile or package kept as a real git checkout — and bring it to green before a push — its code-quality checks with `cmd-tools-checks.sh`, its GitLab CI pipeline on this machine with `cmd-tools-gitlab-ci-local.sh`, a branch as a git worktree with `cmd-tools-clone.sh`, a backup with `cmd-tool-backup-product.sh`. It works in containers only and never on the host. Invoke for "run the checks of this product", "run the pipeline locally before I push", "why is this job red", "make a worktree for this branch", or "back up this product".
 model: fable
 tools:
   - Bash
