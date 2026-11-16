@@ -1,6 +1,6 @@
 {
   "name": "@webship.co/workspace-products",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "The Products workspace for Webship Workspace: the `products/` folder (type sites), its settings file, its 6 commands, its docs and its AI items (an agent, a skill, a command and a prompt, each in the folder of its kind), activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
